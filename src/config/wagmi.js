@@ -3,9 +3,7 @@ import { createConfig } from "wagmi";
 import { getDefaultConfig } from "connectkit";
 import { sepolia} from "wagmi/chains";
 import { mainnet } from '@wagmi/core/chains';
-//Para comprobar que la variable de netorno, se ha cargado correctamente
-console.log(import.meta.env.VITE_ALCHEMY_ID)
-console.log(import.meta.env.VITE_WALLET_CONNECT_PROJECT_ID)
+
 export const config = createConfig(
   getDefaultConfig({
     // Required API Keys

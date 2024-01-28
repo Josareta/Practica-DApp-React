@@ -9,6 +9,7 @@ export default function Owner() {
         address: import.meta.env.VITE_TOKEN_CONTRACT_ADDRESS,
         functionName: 'owner'
     })
+    console.log("Address contract", import.meta.env.VITE_TOKEN_CONTRACT_ADDRESS)
     
     return (
         <div className='bg-white p-4 border shadow rounded-md'>

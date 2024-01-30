@@ -7,6 +7,8 @@ export default function TokenBalance(){
     const { data, isLoading} = useBalance({
         address,
         token: import.meta.env.VITE_TOKEN_CONTRACT_ADDRESS,
+        // watch: true , mira a ver si hay cambios en los datos y actualízalos.
+        watch: true
     })
     if (isLoading) return <div>Loading...</div>
 
